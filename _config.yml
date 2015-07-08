@@ -1,11 +1,11 @@
 # when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -> "archives" )
 menu:
+  tags: /tags
   #archives: /archives
-  #tags: /tags
   #home: /
-  about: /about  
+  #about: /about
   #commonweal: /404.html
- 
+
 # Sidebar, available value:
 #  - post    expand on posts automatically. Default.
 #  - always  expand for all pages automatically
@@ -22,7 +22,7 @@ sidebars:
 favicon: /favicon.png
 
 # Set default keywords (Use a comma to separate)
-keywords: "An blog from server and search programer!   "
+keywords: "C++,Python,Php的程序猿"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -37,9 +37,8 @@ icon_font: default
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: "night eighties"
-
-
+#highlight_theme: "night eighties"
+highlight_theme: "molokai"
 
 # MathJax Support
 #mathjax: true

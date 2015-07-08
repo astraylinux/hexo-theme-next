@@ -7,12 +7,14 @@ $code-block
   margin: 20px 0
   padding: 15px
   overflow: auto
-  font-size 13px
+  font-size 14px
   color: highlight-foreground
   line-height:  $line-height-code-block
+  border-radius: 5px
 
 $line-numbers
   color: #666
+  font-size 14px
 
 .post
   pre, code
@@ -23,6 +25,7 @@ $line-numbers
     padding: 0 0.3em
   pre
     @extend $code-block
+    border-radius: 0px
     code
       background: none
       text-shadow: none
@@ -33,13 +36,18 @@ $line-numbers
       border: none
       margin: 0
       padding: 0
+      border-radius: 0
     table
       margin: 0
       width: auto
+      border-radius: 0
     td
+      background: highlight-background
+      border-radius: 0
       border: none
       padding: 0
     figcaption
+      border-radius: 0
       clearfix()
       font-size: 0.85em
       color: highlight-comment

@@ -19,6 +19,7 @@
 {% endif %}
 
 <link rel="stylesheet" type="text/css" href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}"/>
+<link rel="stylesheet" type="text/css" href="{{ url_for(theme.vendors) }}/awesome/css/font-awesome.min.css?v={{ theme.version }}"/>
 
 {% if config.description %}
     <meta name="description" content="{{ config.description }}" />

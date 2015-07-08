@@ -61,13 +61,28 @@
         {% endif %}
 
         <div class="links-of-author motion-element">
-          {% if theme.social %}
-            {% for name, link in theme.social %}
-              <span class="links-of-author-item">
-              <a href="{{ link }}" target="_blank">{{ name }}</a>
+          {% if theme.social_github %}
+			{% set soc=theme.social_github %}
+            <span class="links-of-author-item">
+			  <a href="{{ soc.link }}" target="_blank">
+				<i class="{{ soc.icon }}"></i> Github</a>
             </span>
-            {% endfor %}
           {% endif %}
+          {% if theme.social_weibo %}
+			{% set soc=theme.social_weibo %}
+            <span class="links-of-author-item">
+			  <a href="{{ soc.link }}" target="_blank">
+				<i class="{{ soc.icon }}"></i> Weibo</a>
+            </span>
+          {% endif %}
+          {% if theme.social_facebook%}
+			{% set soc=theme.social_facebook %}
+            <span class="links-of-author-item">
+			  <a href="{{ soc.link }}" target="_blank">
+				<i class="{{ soc.icon }}"></i> Facebook</a>
+            </span>
+          {% endif %}
+
         </div>
 
         {% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}
